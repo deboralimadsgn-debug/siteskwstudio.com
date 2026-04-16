@@ -246,7 +246,7 @@ ul { list-style: none; }
   color: rgba(219,216,202,0.75);
   font-weight: 100 !important;
   line-height: 1.05;
-  padding-top: 0.6rem;
+  padding-top: 0.3rem;
   flex-shrink: 0;
 }
 
