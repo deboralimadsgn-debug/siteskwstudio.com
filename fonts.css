@@ -1,0 +1,91 @@
+/* =============================================
+   CALI ARQUITETURA — Fontes locais
+   ============================================= */
+
+@font-face {
+  font-family: 'Agatha';
+  src: url('Agatha.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stage Grotesk';
+  src: url('Stage Grotesk/StageGrotesk-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

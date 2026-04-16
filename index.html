@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cali Arquitetura & Interiores</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fonts.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <nav class="nav nav--left">
+        <a href="#">Home</a>
+        <a href="#portfolio">Portfólio</a>
+      </nav>
+      <a href="#" class="logo">
+        <img src="CALILOGOCP.svg" alt="Cali Arquitetura &amp; Interiores" class="logo__img" />
+      </a>
+      <nav class="nav nav--right">
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#" onclick="closeMobileNav()">Home</a>
+      <a href="#portfolio" onclick="closeMobileNav()">Portfólio</a>
+      <a href="#sobre" onclick="closeMobileNav()">Sobre</a>
+      <a href="#contato" onclick="closeMobileNav()">Contato</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__text">
+      <div class="hero__eyebrow">
+        <span>Chegou a hora</span>
+        <span>de construir</span>
+      </div>
+      <h1 class="hero__title">a casa da sua vida</h1>
+    </div>
+    <div class="hero__images">
+      <div class="hero__img-left">
+        <img src="fotos/fotohero1.jpg" alt="Cali Arquitetura" />
+      </div>
+      <div class="hero__img-right">
+        <img src="fotos/ambiente%2002.jpeg" alt="Cali Arquitetura" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section about" id="sobre">
+    <div class="container about__grid">
+      <div class="about__image-wrap">
+        <div class="about__image-placeholder">
+          <img src="fotos/ap.JPG" alt="Cali Arquitetura" class="about__photo" />
+        </div>
+        <div class="about__accent-block"></div>
+      </div>
+      <div class="about__text">
+        <p class="label">Sobre nós</p>
+        <h2 class="section__title">O studio que vai construir a casa da sua vida.</h2>
+        <p>
+          A Cali é um studio de arquitetura e interiores fundado sobre um princípio simples:
+          criar espaços que as pessoas amem de&nbsp;verdade.
+        </p>
+        <p>
+          Acreditamos na <strong>dualidade</strong> — a sinergia de opostos que se complementam.
+          Criativo e técnico. Leve e profissional. Permanente e adaptável. É dessa tensão que
+          nascem os projetos mais&nbsp;marcantes.
+        </p>
+        <p>
+          Para casais que querem projetar e viver a casa de suas vidas, oferecemos
+          processos definidos, previsibilidade e uma visão completa de cada&nbsp;detalhe.
+        </p>
+        <div class="about__values">
+          <div class="value">
+            <span class="value__number">01</span>
+            <span class="value__text">Ambientes perenes e adaptáveis</span>
+          </div>
+          <div class="value">
+            <span class="value__number">02</span>
+            <span class="value__text">Processos definidos e visão 360°</span>
+          </div>
+          <div class="value">
+            <span class="value__number">03</span>
+            <span class="value__text">Dar valor ao essencial</span>
+          </div>
+          <div class="value">
+            <span class="value__number">04</span>
+            <span class="value__text">Respeitar a si e a vida pessoal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section services" id="servicos">
+    <div class="container">
+      <div class="section__header">
+        <p class="label">O que fazemos</p>
+        <h2 class="section__title">Dois olhares.<br />Um resultado extraordinário.</h2>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__num">01</div>
+          <h3 class="service-card__title">Arquitetura</h3>
+          <p class="service-card__text">
+            Projetos residenciais e comerciais com foco em funcionalidade, estética e longevidade.
+            Da planta ao acabamento, cada decisão é tomada com&nbsp;intenção.
+          </p>
+          <ul class="service-card__list">
+            <li>Projeto arquitetônico completo</li>
+            <li>Residencial e comercial</li>
+            <li>Acompanhamento de obra</li>
+            <li>Visão 360° do projeto</li>
+          </ul>
+        </div>
+        <div class="service-card service-card--highlight">
+          <div class="service-card__num">02</div>
+          <h3 class="service-card__title">Interiores</h3>
+          <p class="service-card__text">
+            Ambientes que refletem quem você é.<br />Criamos interiores sofisticados e atemporais<br />que se adaptam à sua vida sem perder a&nbsp;identidade.
+          </p>
+          <ul class="service-card__list">
+            <li>Design de interiores</li>
+            <li>Seleção de mobiliário</li>
+            <li>Ambientes residenciais</li>
+            <li>Consultoria de espaços</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section differentials">
+    <div class="container">
+      <div class="differentials__grid">
+        <div class="diff-item">
+          <div class="diff-item__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M13 20l5 5 9-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4>Previsibilidade</h4>
+          <p>Processos claros do início ao fim. Você sabe o que esperar em cada&nbsp;etapa.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 10v20M10 20h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Visão 360°</h4>
+          <p>Nenhum detalhe esquecido. Pensamos em cada ângulo do seu&nbsp;espaço.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 26c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h4>Feito para você</h4>
+          <p>Cada projeto é único, pensado para quem vai viver e sentir o&nbsp;espaço.</p>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M15 15l10 10M25 15L15 25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Dualidade</h4>
+          <p>A força das grandes duplas. Criativo e técnico em perfeito&nbsp;equilíbrio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="portfolio__header">
+        <p class="label">Portfólio</p>
+        <div class="portfolio__arrows">
+          <button class="portfolio__arrow" id="prevSlide" aria-label="Anterior">&#8592;</button>
+          <button class="portfolio__arrow" id="nextSlide" aria-label="Próximo">&#8594;</button>
+        </div>
+      </div>
+      <div class="portfolio__slider-wrap">
+        <div class="portfolio__slider" id="portfolioSlider">
+          <div class="portfolio__slide">
+            <div class="portfolio__img">
+              <img src="fotos/Projeto1%20.jpg" alt="Projeto 1" />
+            </div>
+            <p class="portfolio__label">Projeto 1</p>
+          </div>
+          <div class="portfolio__slide">
+            <div class="portfolio__img">
+              <img src="fotos/ambiente02.jpeg" alt="Projeto 2" />
+            </div>
+            <p class="portfolio__label">Projeto 2</p>
+          </div>
+          <div class="portfolio__slide">
+            <div class="portfolio__img">
+              <img src="fotos/ambiente%2004.jpeg" alt="Projeto 3" />
+            </div>
+            <p class="portfolio__label">Projeto 3</p>
+          </div>
+          <div class="portfolio__slide">
+            <div class="portfolio__img">
+              <img src="fotos/Projeto%202.jpg" alt="Projeto 4" />
+            </div>
+            <p class="portfolio__label">Projeto 4</p>
+          </div>
+          <div class="portfolio__slide">
+            <div class="portfolio__img">
+              <img src="fotos/Projeto3.jpg" alt="Projeto 5" />
+            </div>
+            <p class="portfolio__label">Projeto 5</p>
+          </div>
+          <div class="portfolio__slide">
+            <div class="portfolio__img">
+              <img src="fotos/Projeto4.jpg" alt="Projeto 6" />
+            </div>
+            <p class="portfolio__label">Projeto 6</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITAÇÃO -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote class="quote">
+        <p>"Um mundo onde as pessoas amam e se identificam com seus espaços."</p>
+        <cite>— Cali Arquitetura &amp; Interiores</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contact" id="contato">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="label">Contato</p>
+          <h2 class="section__title">Vamos projetar<br />juntos?</h2>
+          <p class="contact__desc">
+            Conte-nos sobre o projeto da sua vida. Estamos prontos para
+            ouvir, entender e criar algo extraordinário com&nbsp;você.
+          </p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <span class="contact__detail-label">E-mail</span>
+              <a href="mailto:contato@kwstudio.com.br">contato@kwstudio.com.br</a>
+            </div>
+            <div class="contact__social">
+              <a href="https://wa.me/5522936181896" class="contact__icon-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <img src="whatsapp.svg" alt="WhatsApp" class="contact__icon" />
+              </a>
+              <a href="https://instagram.com/cali.arquitetura" class="contact__icon-link" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg class="contact__icon contact__icon--instagram" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+55 (00) 00000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="project">Tipo de projeto</label>
+          <select id="project" name="project" class="placeholder">
+            <option value="" disabled selected>Selecione</option>
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="interiores">Interiores</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" placeholder="Fale um pouco sobre o seu projeto..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--dark btn--full">Enviar mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo-link">
+            <img src="CALILOGO.svg?v=2" alt="Cali Arquitetura &amp; Interiores" class="footer__logo-img" />
+          </a>
+          <p class="footer__tagline">Criar espaços<br>que as pessoas amem.</p>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-col">
+            <p class="footer__nav-title">Navegação</p>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer__nav-col">
+            <p class="footer__nav-title">Serviços</p>
+            <a href="#servicos">Arquitetura</a>
+            <a href="#servicos">Interiores</a>
+            <a href="#contato">Consultoria</a>
+          </div>
+          <div class="footer__nav-col">
+            <p class="footer__nav-title">Contato</p>
+            <a href="mailto:contato@kwstudio.com.br">contato@kwstudio.com.br</a>
+            <a href="https://wa.me/5522999621785">+55 22 99962-1785</a>
+            <a href="#">@cali.arquitetura</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Cali Arquitetura. Todos os direitos reservados.</p>
+        <p class="footer__credit">Identidade visual por <a href="mailto:contato@kwstudio.com.br">KW Studio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

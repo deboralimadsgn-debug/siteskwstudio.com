@@ -1,0 +1,10 @@
+# Arquivos temporários
+*.tmp
+*.ai
+*.zip
+
+# macOS
+.DS_Store
+
+# PDFs e arquivos de branding (opcionais, remova as linhas se quiser incluir)
+*.pdf
