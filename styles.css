@@ -818,42 +818,91 @@ ul { list-style: none; }
 /* =============================================
    RESPONSIVO
    ============================================= */
+
+/* Tablet grande */
 @media (max-width: 1024px) {
+  .header__inner { width: 90%; }
+
+  .hero__images { max-width: 85%; }
+  .hero__eyebrow { font-size: clamp(1rem, 2vw, 1.6rem); }
+
   .about__grid { grid-template-columns: 1fr; gap: 3rem; }
   .about__image-wrap { max-width: 420px; }
-  .differentials__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .differentials__grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+
+  .portfolio__slide { flex: 0 0 calc(45% - 16px); }
 }
 
+/* Tablet */
 @media (max-width: 768px) {
   .desktop-only { display: none; }
   .nav { display: none; }
   .menu-toggle { display: flex; }
 
-  .hero__title { font-size: clamp(2.5rem, 8vw, 4rem); }
+  .header__inner { width: 100%; padding: 1.2rem 1.5rem; }
 
+  /* Hero */
+  .hero { padding: 6rem 1.5rem 2rem; }
+  .hero__images { max-width: 100%; gap: 10px; }
+  .hero__img-left,
+  .hero__img-right { height: 45vw; min-height: 260px; }
+  .hero__text { gap: 1.2rem; flex-wrap: wrap; justify-content: center; }
+  .hero__title { font-size: clamp(2.8rem, 7vw, 4.5rem); text-align: center; }
+  .hero__eyebrow { font-size: clamp(0.9rem, 2.5vw, 1.3rem); text-align: center; }
+
+  /* Sobre */
+  .about__values { grid-template-columns: 1fr 1fr; }
+
+  /* Serviços */
   .services__grid { grid-template-columns: 1fr; }
   .service-card { padding: 2.5rem 1.5rem; }
 
-  .portfolio__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  .portfolio__item--large,
-  .portfolio__item--wide { grid-column: span 1; }
-  .portfolio__thumb { min-height: 220px; }
+  /* Diferenciais */
+  .differentials__grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 
+  /* Portfolio */
+  .portfolio__slide { flex: 0 0 calc(70% - 16px); }
+
+  /* Contato */
   .contact__grid { grid-template-columns: 1fr; gap: 3rem; }
   .contact__form { grid-template-columns: 1fr; }
   .form-group--full { grid-column: span 1; }
 
+  /* Footer */
+  .footer__brand { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .footer__tagline { border-left: none; padding-left: 0; border-top: 1px solid rgba(166,159,130,0.25); padding-top: 1rem; }
   .footer__top { grid-template-columns: 1fr; gap: 2.5rem; }
   .footer__nav { grid-template-columns: repeat(2, 1fr); }
   .footer__bottom { flex-direction: column; text-align: center; align-items: center; }
-  .about__values { grid-template-columns: 1fr; }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
-  .section { padding: 5rem 0; }
-  .hero__content { padding-top: 7rem; }
+  .section { padding: 4rem 0; }
+
+  /* Hero */
+  .hero { padding: 5.5rem 1rem 2rem; gap: 1.2rem; }
+  .hero__images { gap: 6px; }
+  .hero__img-left,
+  .hero__img-right { height: 52vw; min-height: 200px; }
+  .hero__text { flex-direction: column; align-items: center; gap: 0.5rem; }
+  .hero__title { font-size: clamp(2.2rem, 9vw, 3.2rem); text-align: center; }
+  .hero__eyebrow { font-size: clamp(0.875rem, 3vw, 1.1rem); align-items: center; }
+
+  /* Sobre */
+  .about__values { grid-template-columns: 1fr; }
+
+  /* Diferenciais */
   .differentials__grid { grid-template-columns: 1fr; }
+
+  /* Portfolio */
+  .portfolio__slide { flex: 0 0 calc(85% - 16px); }
+
+  /* Citação */
+  .quote p { font-size: clamp(1.3rem, 5vw, 1.8rem); }
+
+  /* Footer */
+  .footer__nav { grid-template-columns: 1fr; }
+  .footer__logo-img { height: 80px; }
 }
